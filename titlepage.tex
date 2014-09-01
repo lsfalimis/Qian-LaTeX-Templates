@@ -1,0 +1,48 @@
+% I did a little change to University Assignment Title Page Template
+% at http://www.latextemplates.com/template/university-assignment-title-page
+%
+% To use, add the following two lines after \begin{document}:
+% \input{info}
+% \input{titlepage}
+%
+% If info.tex and titlepage.tex are not in the same folder of coursework.tex,
+% use `..' to write the relative path to info.tex and titlepage.tex.
+% For example: \input{../Inputs/titlepage}
+
+\begin{titlepage}
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\vfill
+\center
+{\Large \university}\\[0.5cm]
+{\large \dept}\\[1cm]
+
+\HRule \\[0.5cm]
+{\huge \bfseries \title}\\[0.4cm]
+{\huge \subtitle}\\[0.4cm]
+%{\huge \bfseries \titlecontd}\\[0.4cm]
+\HRule \\[1.5cm]
+
+\begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\emph{Author:}\\
+\author
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.4\textwidth}
+\begin{flushright} \large
+\emph{Supervisor:} \\
+\supervisor
+\end{flushright}
+\end{minipage}\\[4cm]
+
+\begin{minipage}{1\textwidth}
+\begin{flushleft}
+\submissiontext \\[0.5cm]
+Signature:\\[0.3cm]
+Date:
+\end{flushleft}
+\end{minipage}\\[2cm]
+
+{\large \degreedate}\vfill
+\end{titlepage}
