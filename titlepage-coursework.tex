@@ -1,0 +1,28 @@
+% Source needed; I forgot where I got this from!
+
+\newlength{\drop} % Command for generating a specific amount of whitespace
+\drop=0.1\textheight % Define the command as 10% of the total text height
+
+\centering
+\rule{\textwidth}{1pt}\par % Thick horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+
+\vspace{\drop} % Whitespace between the top lines and title1
+{\Huge Title Line 1}\\[0.75\baselineskip] % Title line 1
+{\Huge Title Line 2}\\[0.75\baselineskip]
+{\Huge Title Line 3} % Title line 3
+
+\vspace{0.25\drop} % Whitespace between the title and short horizontal line
+\rule{0.3\textwidth}{0.4pt}\par % Short horizontal line under the title
+\vspace{\drop} % Whitespace between the thin horizontal line and the author name
+
+{\Large \textsc{StudentID}}\par % Author name
+
+\vfill
+{\large \textsc{University of WasteOfTime}}\par % Publisher
+\vspace*{\drop} % Whitespace under the publisher text
+
+\rule{\textwidth}{0.4pt}\par % Thin horizontal line
+\vspace{2pt}\vspace{-\baselineskip} % Whitespace between lines
+\rule{\textwidth}{1pt}\par % Thick horizontal line
